@@ -1,15 +1,15 @@
-variable "db_password" {
-  description = "Senha do banco PostgreSQL"
-  type        = string
-  sensitive   = true
+variable "project_name" {
+  default = "fiap-soat"
 }
 
-variable "vpc_id" {
-  description = "ID da VPC onde o RDS será provisionado"
-  type        = string
+variable "environment" {
+  default = "dev"
 }
 
-variable "subnet_ids" {
-  description = "Lista de Subnets onde o RDS será criado"
-  type        = list(string)
+variable "hash_key" {
+  default = "cpf" # exemplo
+}
+
+variable "hash_key_type" {
+  default = "S"
 }
