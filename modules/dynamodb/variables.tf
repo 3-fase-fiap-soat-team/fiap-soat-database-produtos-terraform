@@ -1,20 +1,16 @@
 variable "project_name" {
-  type        = string
-  description = "Project name"
+  type = string
 }
 
 variable "environment" {
-  type        = string
-  description = "Environment name"
+  type = string
 }
 
 variable "hash_key" {
-  type        = string
-  description = "Primary key for DynamoDB"
+  type = string
 }
 
 variable "hash_key_type" {
-  type        = string
-  description = "Type of primary key: S, N, B"
-  default     = "S"
+  type    = string
+  default = "S"
 }

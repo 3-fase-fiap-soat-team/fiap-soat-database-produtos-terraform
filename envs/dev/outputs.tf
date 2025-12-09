@@ -1,7 +1,7 @@
-output "dynamodb_table_name" {
+output "table_name" {
   value = module.dynamodb.table_name
 }
 
-output "dynamodb_table_arn" {
-  value = module.dynamodb.arn
+output "table_arn" {
+  value = module.dynamodb.table_arn
 }
