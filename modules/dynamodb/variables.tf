@@ -1,19 +1,16 @@
 variable "project_name" {
-  default = "fiap-soat"
+  type = string
 }
 
 variable "environment" {
-  default = "dev"
-}
-
-variable "region" {
-  default = "us-east-1"
+  type = string
 }
 
 variable "hash_key" {
-  default = "cpf"
+  type = string
 }
 
 variable "hash_key_type" {
+  type    = string
   default = "S"
 }
